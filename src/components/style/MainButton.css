@@ -1,0 +1,28 @@
+.Button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    border-radius: 8px;
+    margin-top: 2em;
+    background-color: #1B2628;
+}
+
+.Button p{
+    color: white;
+    font-size: 1.2em;
+    margin: 8px 60px;
+    padding: 5px 0px 5px 0px;
+}
+/*Color hover in discusion*/
+.Button:hover{
+    background-color: #8ba752;
+    border: 1px solid #1B2628;
+    font-weight: bold;
+}
+
+.Button:hover p{
+    color: #1B2628;
+}
+
