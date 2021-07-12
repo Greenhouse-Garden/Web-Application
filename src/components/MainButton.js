@@ -1,11 +1,13 @@
 import React from "react"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import "./style/MainButton.css"
 
-const Button=(props)=>{
-    return(
+const Button = (props) => {
+    return (
         <React.Fragment>
-            <Link className="Button" to={props.link}>
+            <Link className={props.clase}
+                id={props.id}
+                to={props.link}>
                 <p>{props.contentText}</p>
             </Link>
         </React.Fragment>
@@ -13,3 +15,11 @@ const Button=(props)=>{
 }
 
 export default Button;
+
+
+/*style={{
+    height: props.h,
+    backgroundColor: props.bgColor,
+    alignSelf: props.align,
+    p: props.fontSize
+}}*/
