@@ -1,28 +1,65 @@
-.Button{
+
+/* Styles for dark buttons (blue background, white letters, green hover) */
+.darkButton{
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    
-    border-radius: 8px;
-    margin-top: 2em;
+    border-radius: 4px;
+    margin-top: 10px;
     background-color: #1B2628;
 }
 
-.Button p{
+.darkButton p{
     color: white;
     font-size: 1.2em;
     margin: 8px 60px;
     padding: 5px 0px 5px 0px;
 }
 /*Color hover in discusion*/
-.Button:hover{
+.darkButton:hover{
     background-color: #8ba752;
     border: 1px solid #1B2628;
     font-weight: bold;
 }
 
-.Button:hover p{
+.darkButton:hover p{
+    color: white;
+}
+
+
+/* Styles for dark buttons (green background, white letters, blue letters hover) */
+.lightButton{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 10px 8px;
+    background-color: #8ba752;
+}
+
+.lightButton p{
+    color: white;
+    font-size: 1em;
+    margin: 5px 10px;
+    padding: 5px 0px 5px 0px;
+
+}
+/*Color hover in discusion*/
+.lightButton:hover{
+    background-color: #8ba752;
+    border: 1px solid #1B2628;
+    font-weight: bold;
+}
+
+.lightButton:hover p{
     color: #1B2628;
 }
 
+#landingButton{
+   
+}
+
+#signButton{
+
+}
