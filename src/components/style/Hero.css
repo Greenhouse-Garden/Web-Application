@@ -10,10 +10,3 @@
     overflow: hidden;
 }
 
-.Hero__color_filter{
-    position: absolute;
-    background-color: rgba(30, 139, 81, 0.87);
-    width: 100%;
-    z-index: 1;
-    
-}

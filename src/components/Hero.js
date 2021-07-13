@@ -6,7 +6,7 @@ const Hero = (props) => {
         <React.Fragment>
             <div className="Hero">
                 <div className="Hero__img" style={{ height: props.h }}>
-                    <img src={props.foto} alt="" />
+                    <img src={props.foto} width={props.width} alt="" />
                 </div>
             </div>
         </React.Fragment>
