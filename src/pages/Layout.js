@@ -9,8 +9,9 @@ function Layout(props){
         <React.Fragment>
             <div className="Layout">
                 <Header></Header>
-                <Footer></Footer>
                 {props.children}
+                <Footer></Footer>
+                
             </div>
         </React.Fragment>
 
