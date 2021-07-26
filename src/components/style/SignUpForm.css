@@ -1,0 +1,23 @@
+.SignUpForm{
+    
+    margin-top: 40%;
+    border-radius: 15px;
+    
+}
+
+.SignUp__button{
+    margin-top: 15px;
+    background-color: #8ba752;
+    padding: 10px 40px ;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    border: 1px solid lightgray;
+    
+}
+
+.SignUp__button:hover{
+    background-color: #1B2628;
+    color: white;
+    font-weight: bold;
+}
