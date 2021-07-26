@@ -5,12 +5,18 @@ import "./style/SignIn.css"
 const SignIn = (props) => {
     return (
         <React.Fragment>
-            <div className="SignIn">
-                <div className="SignIn__img">
-                    <img src={"https://images.pexels.com/photos/5529596/pexels-photo-5529596.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"} alt="" />
-                    
+            <div className="SignIn" class="row">
+                <div className="SignIn__img" class="col-md-6">
+                    <img class="" src={"https://images.pexels.com/photos/5529596/pexels-photo-5529596.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"} alt="" />
                 </div>
-                <SignInForm></SignInForm>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div className="SignIn__form" class="col-md-5">
+                            <SignInForm></SignInForm>
+                        </div>
+                    </div>
+                </div>
             </div>
         </React.Fragment>
     );
