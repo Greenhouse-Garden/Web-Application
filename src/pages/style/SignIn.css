@@ -1,0 +1,10 @@
+.SignIn__container{
+    background-color: white;
+    height: 88vh;
+    overflow: hidden;
+}
+
+.SignIn__container img{
+   width:100%;
+
+}
