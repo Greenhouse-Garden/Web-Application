@@ -25,13 +25,17 @@ class SignInForm extends Component {
                             type="password"
                             className="form-control"
                         />
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="submit" className="SignUp__button">
+                                Sign In
+                    </button>
                         </div>
-                        <button type="submit" className="Signin__button">
-                            Sign In
-                        </button>
-                        <div class="d-flex flex-column mt-4 form-footer ">
-                        <p class="m-auto"><a href="{% url 'signup' %}">Create an account.</a></p>
+                        <div class="d-flex flex-column mt-4 form-footer col-6 ">
+                            <p class="m-auto"><a href="{% url 'signup' %}">Create an account</a></p>
                         </div>
+                    </div>
                 </form>
             </div>
         );
