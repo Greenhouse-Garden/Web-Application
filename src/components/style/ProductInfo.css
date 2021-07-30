@@ -1,0 +1,93 @@
+.Product__container{
+    width: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.Product__button{
+    margin-top: 15px;
+    background-color: #8ba752;
+    padding: 10px 40px ;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    border: 1px solid lightgray;
+    
+}
+
+.Product__button:hover{
+    background-color: #1B2628;
+    color: white;
+    font-weight: bold;
+}
+
+.Product__container img{
+    width: 100%;
+    margin-top: 20%;
+    border-radius: 10px;
+    box-shadow: 0px 8px 4px 1px rgba(0,0,0,0.2);
+}
+
+
+.Package button{
+    background-color: white;
+    width: 100%;
+    color:black;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+    height: 70px;
+    
+}
+
+.Package button:hover{
+    background-color: #1B2628;
+}
+
+.Package button:focus{
+    background-color: #1B2628;
+}
+
+
+.ProductInfo h2{
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.ProductInfo p{
+    margin-bottom: 5%;
+}
+
+
+.Quantity button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+}
+
+.QuantityAdd__button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 15%;
+}
+
+.QuantityLess__button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 15%;
+}
+
+.Quantity button:hover{
+    background-color: #1B2628;
+}
+
+.Quantity input{
+    border-color: black;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+}
+
