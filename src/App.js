@@ -6,6 +6,7 @@ import Layout from "./pages/Layout"
 import SignIn from "./pages/SignIn"
 import SignUp from "./pages/SignUp"
 import NewProduct from "./pages/NewProduct"
+import Product from "./pages/Product"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/signin" component={SignIn}></Route>
           <Route exact path="/signup" component={SignUp}></Route>
           <Route exact path="/newproduct" component={NewProduct}></Route>
+          <Route exact path="/product" component={Product}></Route>
           
         </Switch>
       </Layout>
