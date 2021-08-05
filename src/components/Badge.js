@@ -4,12 +4,12 @@ import "./style/Badge.css"
 const Badge = (props) => {
     return (
         <React.Fragment>
-            <div className="Badge">
-                    <h2>{props.productName}</h2>
+            <div className="Badge__container mt-5">
+                    <h2 className="Badge__title">{props.productName}</h2>
                 <div className="Badge__img">
-                    <img src={props.imagen} />
+                    <img className="card-img-bottom" src={props.image} />
                 </div>
-                    <button className="Boton">Add to cart</button>
+                    <button className="Badge__button">Add to cart</button>
             </div>
         </React.Fragment>
     );
