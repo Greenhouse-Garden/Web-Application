@@ -1,0 +1,36 @@
+.Badge__container{
+    width: 70%;
+    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.2);
+    position: relative;
+    margin-left: 15%;
+    border-radius: 4px;
+}
+
+.Badge__title{
+    margin: 10px;
+    
+}
+
+
+.Badge__img{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.Badge__button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #8ba752;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
