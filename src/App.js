@@ -8,6 +8,7 @@ import SignUp from "./pages/SignUp"
 import NewProduct from "./pages/NewProduct"
 import Product from "./pages/Product"
 import Catalogue from "./pages/Catalogue"
+import Cart from "./pages/Cart"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/newproduct" component={NewProduct}></Route>
           <Route exact path="/product" component={Product}></Route>
           <Route exact path="/catalogue" component={Catalogue}></Route>
+          <Route exact path="/cart" component={Cart}></Route>
           
         </Switch>
       </Layout>

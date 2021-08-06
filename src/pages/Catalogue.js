@@ -1,6 +1,6 @@
 import React from "react"
 import Badge from "../components/Badge"
-import CardBadge from "../components/Card_Badge"
+import CardBadge from "../components/CardBadge"
 
 import "./style/Catalogue.css"
 
