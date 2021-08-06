@@ -1,0 +1,12 @@
+.Confirm__container h2{
+    margin-top: 20px;
+ }
+ 
+ .Confirm__container{
+     margin-top: 60px;
+ }
+ 
+ .Confirm{
+     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+     border-radius: 4px;
+ }
