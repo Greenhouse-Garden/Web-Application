@@ -1,50 +1,52 @@
 import React from "react"
 import Badge from "../components/Badge"
 import CardBadge from "../components/CardBadge"
-
+import { useState, useEffect } from "react"
 import "./style/Catalogue.css"
 
 
 
 
-const Catalogue=(props) =>{
+function Catalogue() {
+    
+    const [products, setProducts] = useState([])
+
+    useEffect(() => {
+        fetch('https://greenhouse-api-django.herokuapp.com/products/list/', {
+            'method': 'GET',
+            header: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+            }   
+        })
+        .then(response => response.json())
+        .then(response => setProducts(response))
+        .catch(error => console.log(error))
+
+    }, [])
+    
 
     return(
         <React.Fragment>
+
+
             <div className="Catalogue__container">
                 <div className="row">
+                   {products.map(product => {
+                    return <div className="col-md-3">
+                       <CardBadge 
+                           productName={product.name}
+                           productDescription={product.description}
+                           image={product.image_url} >
+                       </CardBadge>
+                   </div>
+                   })} 
                     
-                    <div className="col-md-3">
-                        <CardBadge 
-                            productName={"Tomato seeds"} 
-                            image={"https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"} 
-                            productDescription={"The tomato is the edible berry of the plant Solanum lycopersicum, commonly known as a tomato plant. The species originated in western South America and Central America."}>
-                        </CardBadge>
-                    </div>
 
-                    <div className="col-md-3">
+                   
+                   {/*  <div className="col-md-3">
                         <Badge productName={"Tomato seeds"} image={"https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}></Badge>
-                    </div>
-                    <div className="col-md-3">
-                        <Badge productName={"Tomato seeds"} image={"https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}></Badge>
-                    </div>
-                    <div className="col-md-3">
-                        <Badge productName={"Tomato seeds"} image={"https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}></Badge>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-3">
-                        <Badge productName={"Tomato seeds"} image={"https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}></Badge>
-                    </div>
-                    <div className="col-md-3">
-                        <Badge productName={"Tomato seeds"} image={"https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}></Badge>
-                    </div>
-                    <div className="col-md-3">
-                        <Badge productName={"Tomato seeds"} image={"https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}></Badge>
-                    </div>
-                    <div className="col-md-3">
-                        <Badge productName={"Tomato seeds"} image={"https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}></Badge>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </React.Fragment>
