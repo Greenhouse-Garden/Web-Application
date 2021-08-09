@@ -1,5 +1,5 @@
 import React from "react"
-import CartProduct from "../components/CartProduct"
+import { Link } from "react-router-dom"
 import "./style/Subtotal.css"
 
 const Subtotal = (props) => {
@@ -18,8 +18,7 @@ const Subtotal = (props) => {
                     <br></br>
                     <br></br>
                     <br></br>
-
-                    <button type="button" to={props.link} className="Subtotal__button">{props.boton}</button>
+                    <Link to={props.link} className="Subtotal__button"><p>{props.boton}</p></Link>
                 </div>
             </div>
         </React.Fragment>
