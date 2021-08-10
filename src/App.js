@@ -13,24 +13,28 @@ import Confirm from "./pages/Confirm"
 
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Layout>
-        <Switch>
-          <Route exact path="/" component={Landing}></Route>
-          <Route exact path="/signin" component={SignIn}></Route>
-          <Route exact path="/signup" component={SignUp}></Route>
-          <Route exact path="/newproduct" component={NewProduct}></Route>
-          <Route exact path="/product" component={Product}></Route>
-          <Route exact path="/catalogue" component={Catalogue}></Route>
-          <Route exact path="/cart" component={Cart}></Route>
-          <Route exact path="/confirm" component={Confirm}></Route>
-          
-        </Switch>
-      </Layout>
-    </BrowserRouter>
 
-  );
+  
+
+
+return (
+  <BrowserRouter>
+    <Layout>
+      <Switch>
+        <Route exact path="/" component={Landing}></Route>
+        <Route exact path="/signin" component={SignIn}></Route>
+        <Route exact path="/signup" component={SignUp}></Route>
+        <Route exact path="/newproduct" component={NewProduct}></Route>
+        <Route exact path="/product" component={Product}></Route>
+        <Route exact path="/catalogue" component={Catalogue}></Route>
+        <Route exact path="/cart" component={Cart}></Route>
+        <Route exact path="/confirm" component={Confirm}></Route>
+
+      </Switch>
+    </Layout>
+  </BrowserRouter>
+
+);
 }
 
 export default App;
