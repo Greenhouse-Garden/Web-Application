@@ -14,7 +14,7 @@ function Catalogue() {
     useEffect(() => {
         fetch('https://greenhouse-api-django.herokuapp.com/products/list/', {
             'method': 'GET',
-            header: {
+            headers: {
                 "Content-Type": "application/json",
                 "Accept": "application/json",
             }   
@@ -42,8 +42,6 @@ function Catalogue() {
                    </div>
                    })} 
                     
-
-                   
                    {/*  <div className="col-md-3">
                         <Badge productName={"Tomato seeds"} image={"https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}></Badge>
                     </div> */}
