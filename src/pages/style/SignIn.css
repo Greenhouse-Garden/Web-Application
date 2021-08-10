@@ -8,3 +8,30 @@
    width:100%;
 
 }
+.SigninForm{
+    
+    margin-top: 50%;
+    border-radius: 15px;
+    
+}
+
+.Signin__button{
+    margin-top: 15px;
+    background-color: #8ba752;
+    padding: 10px 40px;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    border: 1px solid lightgray;
+    
+}
+
+.Signin__button:hover{
+    background-color: #1B2628;
+    color: white;
+    font-weight: bold;
+}
+
+.SigninForm a{
+    color: black;
+}
