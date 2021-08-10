@@ -8,9 +8,7 @@ class Header extends React.Component {
         return (
             <React.Fragment>
                 <div className="Header">
-                    <img src="https://media.discordapp.net/attachments/844617951055577128/860675255525965894/Greenhouse_logoWHITE_LETTERS.png" alt="header_image" />
-                    <Button contentText={"Sign in"} clase={"lightButton"} id={"signButton"} link={"/signin"}></Button>
-                    <Button contentText={"Sign up"} clase={"lightButton"} id={"signButton"} link={"/signup"}></Button>
+                    <a href = "http://localhost:3000"><img src="https://media.discordapp.net/attachments/844617951055577128/874570232713342986/Greenhouse_logo.png?width=676&height=676" alt="header_image" /></a>
                 </div>
             </React.Fragment>
         );
