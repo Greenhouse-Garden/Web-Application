@@ -2,21 +2,24 @@ import React from "react"
 import Badge from "../components/Badge"
 import CardBadge from "../components/CardBadge"
 import { useState, useEffect } from "react"
+import { useCookies } from 'react-cookie'
+import { useHistory } from "react-router-dom"
+
 import "./style/Catalogue.css"
-
-
-
 
 function Catalogue() {
     
     const [products, setProducts] = useState([])
+    const [token, setToken, removeToken] = useCookies(['mytoken'])
+    let history = useHistory()
+
 
     useEffect(() => {
         fetch('https://greenhouse-api-django.herokuapp.com/products/list/', {
             'method': 'GET',
             headers: {
                 "Content-Type": "application/json",
-                "Accept": "application/json",
+                "Authorization": `Token ${token['mytoken']}`,
             }   
         })
         .then(response => response.json())
@@ -24,13 +27,25 @@ function Catalogue() {
         .catch(error => console.log(error))
 
     }, [])
+
+    useEffect(() => {
+        if(!token['mytoken']) {
+            history.push('/signin/')
+        }
+    }, [token])
     
+    const logoutButton = () => {
+        removeToken(['mytoken'])
+    }
 
     return(
         <React.Fragment>
 
 
             <div className="Catalogue__container">
+                <div>
+                    <button onClick={logoutButton} className="btn btn-primary" id="logoutButton">Logout</button>
+                </div>
                 <div className="row">
                    {products.map(product => {
                     return <div className="col-md-3">
