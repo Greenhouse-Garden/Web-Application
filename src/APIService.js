@@ -1,5 +1,5 @@
 export default  class APIService{
-    
+
     static Login(body){
         return fetch('https://greenhouse-api-django.herokuapp.com/auth/', {
             'method': 'POST',
@@ -8,7 +8,5 @@ export default  class APIService{
             },
             body:JSON.stringify(body)
         }).then(response => response.json())
-
-
     }
 }
