@@ -32,7 +32,7 @@ function App() {
         </Layout>
       </BrowserRouter>
     </CookiesProvider>
-
+ 
   );
 }
 
