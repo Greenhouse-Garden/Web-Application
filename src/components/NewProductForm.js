@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import './style/NewProductForm.css'
-
-class NewProductForm extends Component {
-    render() {
+/*
+function NewProductForm () {
+    
         return (
             <div className="SignUpForm">
                 <h2>Register a new product</h2>
@@ -13,6 +13,7 @@ class NewProductForm extends Component {
                         </label>
                         <input
                             type="text"
+                            
                             className="form-control"
                         />
                     </div>
@@ -23,6 +24,8 @@ class NewProductForm extends Component {
                         <input
                             type="text"
                             className="form-control"
+                            
+                            
                         />
                     </div>
                     <div className="form-group mb-2">
@@ -32,15 +35,18 @@ class NewProductForm extends Component {
                         <input
                             type="text"
                             className="form-control"
+                        
+                            
                         />
                     </div>
                     <div className="form-group mb-2">
                         <label className="mb-1">
-                            Quantity
+                            Stock
                         </label>
                         <input
                             type="text"
                             className="form-control"
+
                         />
                     </div>
                     <div className="form-group mb-2">
@@ -50,6 +56,7 @@ class NewProductForm extends Component {
                         <input
                             type="text"
                             className="form-control"
+                           
                         />
                     </div>
                     <div class="row">
@@ -64,6 +71,6 @@ class NewProductForm extends Component {
             </div>
         );
     }
-}
 
-export default NewProductForm;
+
+export default NewProductForm; */

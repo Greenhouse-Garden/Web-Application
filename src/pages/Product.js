@@ -1,15 +1,33 @@
 import React from "react"
+import { useState, useEffect } from "react"
 import ProductInfo from "../components/ProductInfo"
 import "./style/Product.css"
 
-const Product = (props) => {
+function Product (props) {
+
+    const [product, setProduct] = useState([])
+
+    useEffect(() => {
+        fetch('https://greenhouse-api-django.herokuapp.com/products/get/4', {
+            'method': 'GET',
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json",
+            }   
+        })
+        .then(response => response.json())
+        .then(response => setProduct(response))
+        .catch(error => console.log(error))
+
+    }, [])
+
     return (
         <React.Fragment>
             <ProductInfo 
-            productName={"Tomato Seeds"} 
-            description={"Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu. Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam condimentum tempus diam, ultricies sollicitudin erat facilisis eget. Vestibulum rhoncus dui vel eros laoreet consectetur. Vivamus eget elementum ligula, vitae pharetra quam. Nullam at ligula sed metu"}
-            image={"https://images.pexels.com/photos/5529596/pexels-photo-5529596.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}
-            price={"200"}
+            productName={product.name} 
+            description={product.description}
+            image={product.image_url}
+            price={product.price}
             ></ProductInfo>
         </React.Fragment>
     );
