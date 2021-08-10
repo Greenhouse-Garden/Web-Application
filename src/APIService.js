@@ -9,4 +9,14 @@ export default  class APIService{
             body:JSON.stringify(body)
         }).then(response => response.json())
     }
+
+    static Register(body){
+        return fetch('https://greenhouse-api-django.herokuapp.com/users/signup/', {
+            'method': 'POST',
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body:JSON.stringify(body)
+        }).then(response => response.json())
+    }
 }
