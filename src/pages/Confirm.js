@@ -21,7 +21,9 @@ const Confirm = (props) => {
                                             cardInfo={"Av. Montes Americanos #9501, Col. Sector 35, C.P. 31216, Chihuahua, Chih., México."}
                                         ></CardInfo>
                                         <CardInfo
-                                            cardInfo={"Av. Montes Americanos #9501, Col. Sector 35, C.P. 31216, Chihuahua, Chih., México."}
+                                            cardInfo={"0451 4589 9833 6448"}
+                                            exp={"02/25"}
+                                            
                                         ></CardInfo>
                                     </div>
 
@@ -33,7 +35,7 @@ const Confirm = (props) => {
                     <div className="col-md-2">
                         <Subtotal
                             ammount={"2"}
-                            total={"450"}
+                            total={"120"}
                             boton={"Complete purchase"}
                             link={`/catalogue/`}
                         ></Subtotal>

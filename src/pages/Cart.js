@@ -18,12 +18,12 @@ const Cart = (props) => {
                         <div className="row">
                             <div className="col-md-12">
                                 <CartProduct
-                                    price={"200"}
+                                    price={"60"}
                                     name={"Tomato seeds 50 seeds package"}
                                     image={"https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}
                                 ></CartProduct>
                                 <CartProduct
-                                    price={"200"}
+                                    price={"60"}
                                     name={"Tomato seeds 50 seeds package"}
                                     image={"https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}
                                 ></CartProduct>
