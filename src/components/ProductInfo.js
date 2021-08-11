@@ -50,7 +50,7 @@ const ProductInfo = (props) => {
                             </div>
                             <br></br>
                             <p><b>Price</b></p>
-                            <h3>${props.price} MXN</h3>
+                            <h3>${props.price}</h3>
                             <button type="button" className="Product__button">
                                 Add to cart
                             </button>

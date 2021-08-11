@@ -4,19 +4,22 @@ import "./style/CardInfo.css"
 import { BsPencil } from "react-icons/bs"
 
 
-class CardInfo extends Component {
+const CardInfo = (props) =>{
 
-    
 
-    render() {
         return (
             <React.Fragment>
                 <div className="CardInfo m-3 p-3">
                     <p></p>
                     <br></br>
-                    
+                    <p>{props.cardInfo}</p>
+                    <p>{props.exp}</p>
+                    <p>{props.code}</p>
+                    <a href="/update">
+
                     <button type="button" className="CardInfo__button" >
                         <div className="row">
+                            
                             <div className="col-md-4">
                                 <p>Edit</p>
                             </div>
@@ -25,11 +28,12 @@ class CardInfo extends Component {
                             </div>
                         </div>
                     </button>
+                    </a>
                     
                 </div>
             </React.Fragment>
         );
     }
-}
+
 
 export default CardInfo;
