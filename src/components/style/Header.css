@@ -14,16 +14,8 @@
 
 }
 
-#logoutButton{
-    display: flex;
-    align-self: right;
-    text-decoration: none;
-    border-radius: 4px;
-    top:1;
-    margin-left: 95%;
-    background-color: #8ba752;
-    border-color: black;
-}
+
+
 
 .icono{
     width: 60px;
