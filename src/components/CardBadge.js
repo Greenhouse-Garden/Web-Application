@@ -14,8 +14,8 @@ const useStyles = makeStyles({
     root: {
         maxWidth: 280,
         margin: 50,
-        maxHeight: 400,
-        minHeight: 400,
+        maxHeight: 450,
+        minHeight: 450,
 
     },
     image: {
@@ -23,7 +23,10 @@ const useStyles = makeStyles({
         maxHeight: 200
     },
     boton: {
-        backgroundColor: "#8ba752"
+        backgroundColor: "#8ba752",
+        marginLeft: 10,
+        marginRight: 30,
+        width: 80
     }
 });
 
@@ -56,7 +59,7 @@ const CardBadge = (props) => {
                         </div>
                         <div className="col-md-6 m-auto">
                             <Typography gutterBottom variant="h5" component="h4">
-                                $ {props.price}
+                                ${props.price}
                             </Typography>
                         </div>
                     </div>
