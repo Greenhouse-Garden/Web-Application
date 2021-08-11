@@ -56,7 +56,7 @@ const CardBadge = (props) => {
                         </div>
                         <div className="col-md-6 m-auto">
                             <Typography gutterBottom variant="h5" component="h4">
-                                MXN {props.price}
+                                $ {props.price}
                             </Typography>
                         </div>
                     </div>
