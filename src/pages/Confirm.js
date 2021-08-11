@@ -4,6 +4,8 @@ import CardInfo from "../components/CardInfo"
 import "./style/Confirm.css"
 
 const Confirm = (props) => {
+
+    
     return (
         <React.Fragment>
             <div className="Confirm__container">
@@ -15,6 +17,9 @@ const Confirm = (props) => {
                                 <h2 className="m-3">Confirm Information</h2>
                                 <div className="row">
                                     <div className="col-md-5">
+                                        <CardInfo
+                                            cardInfo={"Av. Montes Americanos #9501, Col. Sector 35, C.P. 31216, Chihuahua, Chih., México."}
+                                        ></CardInfo>
                                         <CardInfo
                                             cardInfo={"Av. Montes Americanos #9501, Col. Sector 35, C.P. 31216, Chihuahua, Chih., México."}
                                         ></CardInfo>
@@ -30,7 +35,7 @@ const Confirm = (props) => {
                             ammount={"2"}
                             total={"450"}
                             boton={"Complete purchase"}
-                            link={"/confirm"}
+                            link={`/catalogue/`}
                         ></Subtotal>
                     </div>
 

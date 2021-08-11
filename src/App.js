@@ -10,6 +10,7 @@ import Catalogue from "./pages/Catalogue"
 import Cart from "./pages/Cart"
 import Confirm from "./pages/Confirm"
 import {CookiesProvider} from 'react-cookie'
+import UpdateProfile from "./pages/UpdateProfile";
 
 
 function App() {
@@ -21,10 +22,11 @@ function App() {
             <Route exact path="/" component={Landing}></Route>
             <Route exact path="/signin/" component={SignIn}></Route>
             <Route exact path="/newproduct/" component={NewProduct}></Route>
-            <Route exact path="/product/" component={Product}></Route>
+            <Route exact path="/product/:id" component={Product}></Route>
             <Route exact path="/catalogue/" component={Catalogue}></Route>
             <Route exact path="/cart/" component={Cart}></Route>
             <Route exact path="/confirm/" component={Confirm}></Route>
+            <Route exact path="/update/" component={UpdateProfile}></Route>
             
           </Switch>
         </Layout>
