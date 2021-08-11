@@ -8,7 +8,7 @@ class Header extends React.Component {
         return (
             <React.Fragment>
                 <div className="Header">
-                    <a href = "http://localhost:3000"><img src="https://media.discordapp.net/attachments/844617951055577128/874570232713342986/Greenhouse_logo.png?width=676&height=676" alt="header_image" /></a>
+                    <a href = "/"><img src="https://media.discordapp.net/attachments/844617951055577128/874570232713342986/Greenhouse_logo.png?width=676&height=676" alt="header_image" /></a>
                 </div>
             </React.Fragment>
         );
