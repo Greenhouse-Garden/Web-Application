@@ -2,9 +2,13 @@
     display: flex;
     align-self: right;
     text-decoration: none;
+    position: fixed;
     border-radius: 4px;
-    margin: 10px 8px;
-    margin-left: 95%;
+    z-index: 100;
+    margin-top: 15px;
+    top: 0;
+    margin-left: 90%;
     background-color: #8ba752;
     border-color: black;
+    
 }
