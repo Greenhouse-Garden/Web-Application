@@ -3,8 +3,8 @@ export default class APIService {
         return fetch('https://greenhouse-api-django.herokuapp.com/products/create/', {
             'method': 'POST',
             headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json",
+                "Content-Type": "application/json"
+                
             },
             body: JSON.stringify(body)
         }).then(response => response.json())
@@ -24,6 +24,16 @@ export default class APIService {
     static Register(body) {
         return fetch('https://greenhouse-api-django.herokuapp.com/users/signup/', {
             'method': 'POST',
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(body)
+        }).then(response => response.json())
+    }
+
+    static Update(id, body){
+        return fetch(`https://greenhouse-api-django.herokuapp.com/profile/${id}`, {
+            'method': 'PUT',
             headers: {
                 "Content-Type": "application/json",
             },
