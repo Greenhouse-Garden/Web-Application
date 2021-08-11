@@ -24,8 +24,6 @@ function NewProduct() {
     return (
         <React.Fragment>
             <div className="container">
-
-
                 <div className="SignUp" class="row">
                     <div className="SignUp__img" class="col-md-6">
 
@@ -33,7 +31,7 @@ function NewProduct() {
                     <div className="col-md-6">
                         <div className="row">
                             <div class="col-md-3"></div>
-                            <div className="SignUp__form" class="col-md-5">
+                            <div className="SignUp__form" class="col-md-6">
                                 <div className="SignUpForm">
                                     <h2>Register a new product</h2>
                                     <form>
@@ -93,8 +91,8 @@ function NewProduct() {
                                             />
                                         </div>
                                         <div class="row">
-                                            <div class="col-6">
-                                                <button onClick={addProduct} type="submit" className="SignUp__button">
+                                            <div className="col-9">
+                                                <button onClick={addProduct} className="SignUp__button">
                                                     Add product
                         </button>
                                             </div>
