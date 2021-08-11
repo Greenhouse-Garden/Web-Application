@@ -7,7 +7,7 @@ const Button = (props) => {
         <React.Fragment>
             <Link className={props.clase}
                 id={props.id}
-                to={props.link}>
+                to={props.link }>
                 <p>{props.contentText}</p>
             </Link>
         </React.Fragment>
