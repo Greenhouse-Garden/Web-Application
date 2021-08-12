@@ -100,8 +100,8 @@ function SignIn(){
                                 <div className="row">
                                     <div className="col-6">
 
-                                         {isLogIn ? <button onClick = {loginButton} type="submit" className="SignUp__button">Sign In</button>
-                                        : <button onClick = {registerButton} type="submit" className="SignUp__button">Sign Up</button>
+                                         {isLogIn ? <button onClick = {loginButton} type="submit" className="Signin__button">Sign In</button>
+                                        : <button onClick = {registerButton} type="submit" className="Signin__button">Sign Up</button>
                                         }
                                         
                                     </div>
