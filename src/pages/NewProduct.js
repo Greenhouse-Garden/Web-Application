@@ -1,7 +1,6 @@
 import React from "react"
 import APIService from "../APIService"
-import { useState, useEffect } from "react"
-import NewProductForm from "../components/NewProductForm"
+import { useState} from "react"
 import "./style/NewProduct.css"
 
 function NewProduct() {
