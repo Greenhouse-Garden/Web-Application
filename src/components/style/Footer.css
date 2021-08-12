@@ -1,17 +1,14 @@
 .Footer{
+    
     width: 100%;
-    height: 60px;
     text-align: left;
     align-items: left;
     justify-content: left;
     background-color: #1B2628;
     bottom:0;
-
     display: flex;
-
-    position: fixed;
-
-    bottom: 0px;
+    position: relative;
+    margin-top: 150;
 
     z-index: 100;
     
