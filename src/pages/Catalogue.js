@@ -9,7 +9,7 @@ import "./style/Catalogue.css"
 function Catalogue() {
 
     const [products, setProducts] = useState([])
-    const [token, setToken, removeToken] = useCookies(['mytoken'])
+    const [token, removeToken] = useCookies(['mytoken'])
     let history = useHistory()
 
 
