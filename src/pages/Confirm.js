@@ -35,7 +35,7 @@ const Confirm = (props) => {
                     <div className="col-md-2">
                         <Subtotal
                             ammount={"2"}
-                            total={"120"}
+                            total={"5"}
                             boton={"Complete purchase"}
                             link={`/catalogue/`}
                         ></Subtotal>

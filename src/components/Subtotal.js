@@ -14,7 +14,7 @@ const Subtotal = (props) => {
                         <p className="mt-2">({props.ammount} items):</p>
                     </div>
                     
-                    <h3>$ {props.total} MXN</h3>
+                    <h3>${props.total}</h3>
                     <br></br>
                     <br></br>
                     <br></br>
