@@ -7,7 +7,7 @@ const CartProduct = (props) => {
             <div className="CartProduct__container ">
                 <div className="row">
                     <div className="col-md-2">
-                        <img className="card-img-bottom" src={props.image} />
+                        <img className="card-img-bottom" alt="imageProduct" src={props.image} />
                     </div>
                     <div className="col-md-7">
                         <h4 class="">{props.name}</h4>
