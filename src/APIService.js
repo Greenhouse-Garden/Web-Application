@@ -1,3 +1,4 @@
+
 export default class APIService {
     static AddProduct(body) {
         return fetch('https://greenhouse-api-django.herokuapp.com/products/create/', {
