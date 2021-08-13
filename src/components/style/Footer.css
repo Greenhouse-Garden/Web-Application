@@ -18,3 +18,17 @@
     color: #8ba752;
     margin: 20px 10px
 }
+
+.main-footer {
+    color: white;
+    background-color:#1B2628;
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.aboutUsText {
+    text-decoration: none;    
+    color:white;
+}

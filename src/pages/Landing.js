@@ -12,7 +12,7 @@ const Landing=(props) =>{
                     <h2 className="Main__subtitle">Garden</h2>
                     <Button clase={"darkButton"} contentText={"Get your own Greenhouse"} link={"/signin/"} id={"landingButton"}></Button>
                 </div>
-                <Hero h={"88vh"} foto={"https://images.pexels.com/photos/2749165/pexels-photo-2749165.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}></Hero>
+                <Hero h={"88vh"} foto={"https://images.pexels.com/photos/2749165/pexels-photo-2749165.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"} width='100%'></Hero>
             </div>
         </React.Fragment>
     );

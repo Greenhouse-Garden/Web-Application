@@ -1,18 +1,23 @@
-.Header{
+/* .container{
     display: flex;
     align-content: center;
-    height: 70px;
+    height: 100%;
     width: 100%;
     border-bottom: 1px solid #1B2628;
     background-color: #1B2628;
 }
-
-.Header a img{
-    margin: -10px 80% 10px -2px ;
+ */
+.logoHeader{
+    margin: 0px 70% 5px -2px ;
     height: 90px;
     width: 90px;
 
 }
+
+#headerText {
+    color: white;
+}
+
 
 
 
