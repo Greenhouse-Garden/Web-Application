@@ -11,6 +11,8 @@ class Header extends React.Component {
                 <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top" style={{height:"65px"}} >
                     <div class="container">
                         <a class="navbar-brand" href="/"><img className="logoHeader" src="https://media.discordapp.net/attachments/844617951055577128/874570232713342986/Greenhouse_logo.png?width=676&height=676" alt="header_image" /></a>
+                        <a class="navbar-brand" href="/cart/"><img className="cart" src="https://media.discordapp.net/attachments/844617951055577128/874994305809383444/cartIcon.png" alt="cart_image" /></a>
+
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
