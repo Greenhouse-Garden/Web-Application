@@ -6,8 +6,8 @@ import "./style/Header.css"
 class Header extends React.Component {
     render() {
         return (
+
             <React.Fragment>
-                
                 <nav class="navbar navbar-expand navbar-dark bg-dark sticky-top" style={{height:"65px"}} >
                     <div class="container">
                         <a class="navbar-brand" href="/"><img className="logoHeader" src="https://media.discordapp.net/attachments/844617951055577128/874570232713342986/Greenhouse_logo.png?width=676&height=676" alt="header_image" /></a>
