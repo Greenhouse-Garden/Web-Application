@@ -11,7 +11,7 @@ import Cart from "./pages/Cart"
 import Confirm from "./pages/Confirm"
 import {CookiesProvider} from 'react-cookie'
 import UpdateProfile from "./pages/UpdateProfile";
-
+import Verification from "./pages/Verification";
 
 function App() {
   return (
@@ -27,6 +27,8 @@ function App() {
             <Route exact path="/cart/" component={Cart}></Route>
             <Route exact path="/confirm/" component={Confirm}></Route>
             <Route exact path="/update/" component={UpdateProfile}></Route>
+            <Route exact path="/verification/" component={Verification}></Route>
+
             
           </Switch>
         </Layout>
